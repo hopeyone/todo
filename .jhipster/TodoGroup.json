@@ -1,0 +1,31 @@
+{
+  "applications": ["tasks", "todo"],
+  "changelogDate": "20221031103843",
+  "clientRootFolder": "todo",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "todo_group",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "todo",
+  "name": "TodoGroup",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "todo",
+      "otherEntityRelationshipName": "todoGroup",
+      "relationshipName": "todo",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}
